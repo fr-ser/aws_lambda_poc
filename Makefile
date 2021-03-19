@@ -34,7 +34,7 @@ terraform-apply:
 	terraform apply terraform
 
 deploy:
-	rm function.zip || true
-	cd dist && zip --quiet --recurse-paths ../function.zip ./* && cd ..
+	docker build -t lambda_builder . > /dev/null
+	docker run lambda_builder > function.zip
 	aws s3 cp function.zip s3://lambda-poc-unique-name-lambda-source/poc_report/stable.zip
 	terraform apply terraform

@@ -11,5 +11,5 @@ function.zip
 # deployment code and packages
 dist/*
 
-# for PoC purposes (should either be commited or a remote state should be used)
+# ignored for PoC purposes (should either be commited or a remote state should be used)
 terraform.tfstate*

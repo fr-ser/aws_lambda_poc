@@ -32,7 +32,6 @@ together with the source code.
 
 ### Build environment
 
-<!-- TODO -->
 As some python packages contain compiled C code (e.g. numpy, which is required by pyarrow) a build
 environment of Linux is needed. To accommodate MacOS and Windows users a dockerized build
 environment is used here.

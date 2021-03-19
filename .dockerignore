@@ -1,2 +1,5 @@
 .venv
 dist
+**/.terraform*
+function.zip
+__pycache__
